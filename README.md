@@ -1,5 +1,5 @@
-## Olá! Eu sou o Leonardo Ferreira 🖐🏽
-Estudante de Análise e Desenvolvimento de Sistemas focado no desenvolvimento Backend!
+## Olá! Eu sou o Leonardo 🖐🏽
+Estudante de Engenharia de Software focado no desenvolvimento Backend!
 
 
 
