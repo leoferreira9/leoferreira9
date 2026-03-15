@@ -9,11 +9,14 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: hugopm/github-readme-pacman@v1.0
+      - uses: actions/checkout@v3
+      - uses: marketplace/actions/generate-snake-game-from-github-contribution-graph@v1.2
         with:
           github_user_name: leoferreira9
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          output_dir: dist
+          svg_out_path: dist/pacman-contribution-graph.svg
+          game: pacman
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
